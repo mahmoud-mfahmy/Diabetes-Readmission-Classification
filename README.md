@@ -60,3 +60,96 @@ backward <- step(lr_all, direction = 'backward')
 
 
 ![DT_ROCjpg](https://user-images.githubusercontent.com/76078425/102925822-171a1080-4462-11eb-9689-ef99923b88d3.jpg)
+
+
+
+|  |
+
+**                Reference**
+
+ |  |
+
+**Metrics**
+
+ |
+|
+
+**Prediction      **
+
+ |
+
+No readmission
+
+ |
+
+Readmission
+
+ |  |
+
+Accuracy
+
+ |
+
+0.643522
+
+ |
+|
+
+  No readmission 
+
+ |
+
+9137
+
+ |
+
+2737
+
+ |  |
+
+Sensitivity
+
+ |
+
+0.750103
+
+ |
+|
+
+  Readmission   
+
+ |
+
+3044
+
+ |
+
+1299
+
+ |  |
+
+Specificity
+
+ |
+
+0.321853
+
+ |
+|  |  |  |  |
+
+Precision
+
+ |
+
+0.769496
+
+ |
+|  |  |  |  |
+
+F1 score
+
+ |
+
+0.759676
+
+ |
