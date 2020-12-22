@@ -47,7 +47,7 @@ backward <- step(lr_all, direction = 'backward')
 | AUC| 0.615|
 
 
-| <img src="images/LogReg_ROC.jpg" width=300 height=300>|
+| <img src="images/LogReg_ROC.jpg" width=350 height=375>|
 |:--:| 
 | *ROC for Logistic Regression* |
 
@@ -57,10 +57,12 @@ backward <- step(lr_all, direction = 'backward')
 - Complexity parameter cp tuned using 10-fold cross validation
 
 
-![DecTree](https://user-images.githubusercontent.com/76078425/102925803-13868980-4462-11eb-83b4-3021093c87fd.jpg)
+| <img src="images/DecTree.jpg" width=350 height=350>|
 |:---:|
 |*Decision Tree*|
 
+
+**Decision Tree Results:**
 | Metric  | Value   |
 |---|---|
 | Accuracy  |  0.650898 |
@@ -70,14 +72,16 @@ backward <- step(lr_all, direction = 'backward')
 | AUC| 0.607|                                       
 
 
-![DT_ROC](https://user-images.githubusercontent.com/76078425/102926946-f8b51480-4463-11eb-841d-c063805dc1bb.jpg)
+| <img src="images/DT_ROC.jpg" width=350 height=375>|
+|:---:|
+|*Decision Tree ROC*|
 
 ### Support Vector Machine:
 - Oversampling used to balance classes
 - Recursive feature elimination used for variable selection
 - Additional validation set created to tune hyperparamters (cost and gamma) using grid search before deploying on test set
 
-
+**Support Vector Machine Results:**
 | Metric  | Value   |
 |---|---|
 | Accuracy  |  0.643522 |
@@ -86,6 +90,43 @@ backward <- step(lr_all, direction = 'backward')
 | Precision | 	0.769496  |
 | AUC| 0.536|    
 
-![SVM_ROC](https://user-images.githubusercontent.com/76078425/102927296-b04a2680-4464-11eb-9486-0fcce7cc4618.jpg)
+
+| <img src="images/SVM_ROC.jpg" width=350 height=375>|
+|:---:|
+|*Support Vector Machine ROC*|
 
 ### Random Forest:
+- Oversampling used to balance classes
+- Hyperparamter *mtry* (representing number of variables randomly sampled at each node) tuned using 5-fold cross validation
+
+**Random Forest Results:**
+| Metric  | Value   |
+|---|---|
+| Accuracy  |  0.746461 |
+| Sensitivity  | 0.925484|
+| Specificity  | 0.212345|
+| Precision | 	0.778052  |
+| AUC| 0.569|    
+
+
+| <img src="images/RF_ROC.jpg" width=350 height=375>|
+|:---:|
+|*Random Forest ROC*|
+
+### K-means Clustering:
+- Converted all categorical features using one-hot encoding
+- Standardized variables since the algorithm is reliant on distance
+- First used a value of K=2 and plotted the results on two dimensions using PCA
+
+
+| <img src="kmeans.jpeg" width=350 height=375>|
+|:---:|
+|*K-means Clustering plot with K=2*|
+
+
+
+- Tuned the value of K using within-cluster sum of squares
+
+| <img src="Kmeans_WSS.jpg" width=350 height=375>|
+|:---:|
+|*WSS for different values of K*|
