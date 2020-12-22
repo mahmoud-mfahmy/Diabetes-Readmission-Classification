@@ -35,7 +35,9 @@ Using classification methods to predict hospital readmission for diabetic patien
 ``` R
 lr_all = glm(readmitted~.,data=train_data,family='binomial')
 backward <- step(lr_all, direction = 'backward')                                                          
-```                                                              
+```
+
+**Logistic Regression Results:**
 | Metric  | Value   |                                               
 |---|---|
 | Accuracy  |  0.643522 |
@@ -45,14 +47,9 @@ backward <- step(lr_all, direction = 'backward')
 | AUC| 0.615|
 
 
-| ![LogReg_ROC](https://user-images.githubusercontent.com/76078425/102842982-41be8780-43d6-11eb-8871-f7eec3157d55.jpg)|
+| <img src="images/LogReg_ROC.jpg" width=300 height=300>|
 |:--:| 
 | *ROC for Logistic Regression* |
-
-
-|                                               |                                               |                                               
-|-----------------------------------------------|-----------------------------------------------|
-| <img src="images/SVM_res.jpg" width=300 height=300> | <img src="images/DecTree.jpg" width=300 height=300> |
 
 
 ### Decision Tree:
