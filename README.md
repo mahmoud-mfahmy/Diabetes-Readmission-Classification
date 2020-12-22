@@ -24,9 +24,11 @@ Using classification methods to predict hospital readmission for diabetic patien
 
 - Created buckets for many categorical features to reduce number of distinct values
 - Combined 3 features (number of outpatient, inpatient, and emergency room visits) into 1 feature called "total visits"
-- Dropped 
+- Dropped or recoded most features describing medication due to lack of variance
 - Converted "age" variable from 10 age groups to just 3: {[0,30), [30,60), >60}
 - Recoded target variable (Readmitted) from 3 values (>30 day readmission, <30 day readmission, No readmission) into a binary ("Readmission", "No Readmission")
+
+
 
 
 
