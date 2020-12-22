@@ -4,7 +4,7 @@ Using classification methods to predict hospital readmission for diabetic patien
 ## Summary:
 * Dataset consists of 10 years of diabetic patients' data in the U.S., along with whether or they not they were readmitted to the hospital (Unbalanced classes with ~75% not readmitted)
 * Data was cleaned and many of the features were recoded/engineered
-* Multiple classification models were compared using R (Logistic Regression, SVM, Decision Tree, Random Forest) on the basis of AUC as well as K-Means Clustering
+* Multiple classification models were compared using R (Logistic Regression, SVM, Decision Tree, Random Forest) on the basis of AUC and K-Means Clustering was performed as well
 * Logistic regression was found to be the best performing model (AUC = 0.615)
 
 ## References:
@@ -28,7 +28,15 @@ Using classification methods to predict hospital readmission for diabetic patien
 - Converted "age" variable from 10 age groups to just 3: {[0,30), [30,60), >60}
 - Recoded target variable (Readmitted) from 3 values (>30 day readmission, <30 day readmission, No readmission) into a binary ("Readmission", "No Readmission")
 
+### Logistic Regression:
 
+- Undersampling used to balance data while maintaining independence of samples
+``` R
+{
+backward <- step(lr_all, direction = 'backward', scope = list(lower=lr_base, 
+                                                              upper = lr_all), trace = 1)
+}                                                              
+```                                                              
 
 
 
