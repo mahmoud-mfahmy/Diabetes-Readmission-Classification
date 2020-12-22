@@ -31,13 +31,14 @@ Using classification methods to predict hospital readmission for diabetic patien
 ### Logistic Regression:
 
 - Undersampling used to balance data while maintaining independence of samples
+- Backward selection employed for feature selection using step() function from stats package
 ``` R
-backward <- step(lr_all, direction = 'backward', scope = list(lower=lr_base, 
-                                                              upper = lr_all), trace = 1)                                                          
+lr_all = glm(readmitted~.,data=train_data,family='binomial')
+backward <- step(lr_all, direction = 'backward')                                                          
 ```                                                              
-
-
-
-
+|       | No Readmission | Readmission     |
+| ---:        |    :----:   |          :----: |
+| No Readmission      | 4823       | 1004   |
+| Readmission   | 2674        | 1428      |
 
 ![LogReg_ROC](https://user-images.githubusercontent.com/76078425/102842982-41be8780-43d6-11eb-8871-f7eec3157d55.jpg)
