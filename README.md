@@ -32,10 +32,8 @@ Using classification methods to predict hospital readmission for diabetic patien
 
 - Undersampling used to balance data while maintaining independence of samples
 ``` R
-{
 backward <- step(lr_all, direction = 'backward', scope = list(lower=lr_base, 
-                                                              upper = lr_all), trace = 1)
-}                                                              
+                                                              upper = lr_all), trace = 1)                                                          
 ```                                                              
 
 
