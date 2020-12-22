@@ -48,10 +48,15 @@ backward <- step(lr_all, direction = 'backward')
 ### Decision Tree:
 - Oversampling used to balance classes
 - Complexity parameter cp tuned using 10-fold cross validation
+
+
 ![DecTree](https://user-images.githubusercontent.com/76078425/102925803-13868980-4462-11eb-83b4-3021093c87fd.jpg)
+
+
 |True vs Predicted|No Readmission|Readmission|
 | ---: |:----:   | :----:  |
 |**No Readmission**   |12034 | 2737   |
 |**Readmission**   |5351   |3046  |                                           
+
 
 ![DT_ROCjpg](https://user-images.githubusercontent.com/76078425/102925822-171a1080-4462-11eb-9689-ef99923b88d3.jpg)
