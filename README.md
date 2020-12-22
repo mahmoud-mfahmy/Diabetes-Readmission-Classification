@@ -57,7 +57,8 @@ backward <- step(lr_all, direction = 'backward')
 
 
 ![DecTree](https://user-images.githubusercontent.com/76078425/102925803-13868980-4462-11eb-83b4-3021093c87fd.jpg)
-
+|:---:|
+|*Decision Tree*|
 
 | Metric  | Value   |
 |---|---|
