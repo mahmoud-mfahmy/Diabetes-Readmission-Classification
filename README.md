@@ -45,7 +45,8 @@ backward <- step(lr_all, direction = 'backward')
 | AUC| 0.615|
 
 	
- 
+|:--:| 
+| *ROC for Logistic Regression* |
  ![LogReg_ROC](https://user-images.githubusercontent.com/76078425/102842982-41be8780-43d6-11eb-8871-f7eec3157d55.jpg)
 
 ### Decision Tree:
@@ -82,3 +83,5 @@ backward <- step(lr_all, direction = 'backward')
 | AUC| 0.536|    
 
 ![SVM_ROC](https://user-images.githubusercontent.com/76078425/102927296-b04a2680-4464-11eb-9486-0fcce7cc4618.jpg)
+
+### Random Forest:
