@@ -128,7 +128,7 @@ backward <- step(lr_all, direction = 'backward')
 
 
 
-- Tuned the value of K using within-cluster sum of squares
+- Tuned the value of K using within-cluster sum of squares, choosing K=4 as the "elbow" of the plot
 
 | <img src="images/Kmeans_WSS.jpg" width=350 height=375>|
 |:---:|
