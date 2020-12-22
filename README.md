@@ -36,7 +36,7 @@ Using classification methods to predict hospital readmission for diabetic patien
 lr_all = glm(readmitted~.,data=train_data,family='binomial')
 backward <- step(lr_all, direction = 'backward')                                                          
 ```                                                              
-|   |  Ref | erence  |
+| Ref  |  ere | nce  |
 |Prediction|No Readmission|Readmission|
 | ---: |:----:   | :----:  |
 |No Readmission   |4823   |1004   |
