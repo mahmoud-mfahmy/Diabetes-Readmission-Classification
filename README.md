@@ -44,7 +44,9 @@ backward <- step(lr_all, direction = 'backward')
 | Precision | 	0.769496  |
 | AUC| 0.615|
 
-	<img align="right" src="https://user-images.githubusercontent.com/76078425/102842982-41be8780-43d6-11eb-8871-f7eec3157d55.jpg">
+<p align="center">
+<img src=https://user-images.githubusercontent.com/76078425/102842982-41be8780-43d6-11eb-8871-f7eec3157d55.jpg">
+</p>
 
 | ![LogReg_ROC](https://user-images.githubusercontent.com/76078425/102842982-41be8780-43d6-11eb-8871-f7eec3157d55.jpg)|
 |:--:| 
