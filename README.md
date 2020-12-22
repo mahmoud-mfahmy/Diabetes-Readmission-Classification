@@ -13,7 +13,10 @@ Using classification methods to predict hospital readmission for diabetic patien
 ### Data Cleaning:
 - The initial dataset has 101,766 rows and 50 attributes. First, we checked for missing values upon importing the data into R. 
 
-![missing data](https://user-images.githubusercontent.com/76078425/102843070-6d417200-43d6-11eb-8235-166bee42d47c.jpg) 
+
+| <img src="images/missing.jpg" width=350 height=375>|
+|:--:| 
+| *Columns with missing values* |
 
 - Weight, payer_code, and medical_specialty were dropped since they were missing > 40% of their data 
 - Dropped only the missing rows for other columns 
