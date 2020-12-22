@@ -19,7 +19,7 @@ Using classification methods to predict hospital readmission for diabetic patien
 - For the other columns, I only dropped the missing rows since they were so few (<2% of dataset)
 - I dropped one row which had a value for gender = "Invalid"
 
-### Feature Engineering:
+
 
 
 
