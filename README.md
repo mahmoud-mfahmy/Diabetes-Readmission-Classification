@@ -119,7 +119,7 @@ backward <- step(lr_all, direction = 'backward')
 - First used a value of K=2 and plotted the results on two dimensions using PCA
 
 
-| <img src="kmeans.jpeg" width=350 height=375>|
+| <img src="images/kmeans.jpeg" width=350 height=375>|
 |:---:|
 |*K-means Clustering plot with K=2*|
 
@@ -127,6 +127,6 @@ backward <- step(lr_all, direction = 'backward')
 
 - Tuned the value of K using within-cluster sum of squares
 
-| <img src="Kmeans_WSS.jpg" width=350 height=375>|
+| <img src="images/Kmeans_WSS.jpg" width=350 height=375>|
 |:---:|
 |*WSS for different values of K*|
